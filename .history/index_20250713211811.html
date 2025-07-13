@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css"><!--this link the style page-->
+</head>
+<body><!--part 2 start navbar-->
+    <header>
+        <nav>
+            <h1 class="logo">Siddhi</h1>
+            <div>
+            <button class="hamburger" onclick="toggleMenu();">&#9776;</button>
+            </div><!--div will bound the element side by side -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--part 3 hero section-->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h2>Hello,I'm</h2>
+            <h1>Siddhi</h1>
+            <h3>FrontEnd Developer</h3>
+            <p>I love building interactive and responsive websites using HTML,css and Javascript</p>
+            <a href="resume.pdf" download class="btn">Download resume</a>
+        </div>
+        <div class="hero-image">
+            <img src="assets/profile.jpg" alt="profile image">
+        </div>
+    </section>
+    <!--about me-->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+              I am a passionate front-end developer with a love for crafting interactive and responsive websites. I enjoy turning ideas into beautiful and functional web experiences using HTML, CSS, and JavaScript.
+            </p>
+            <p>
+              When I'm not coding, I'm learning new tech skills or exploring design inspirations to enhance my creativity and productivity.  
+            </p>
+        </div>
+    </section>
+    <!-- skills section-->
+    <section>
+        <div class="skills" id="skills">
+            <h2 class="skills-heading">My skills</h2>
+            <div class="skills-container">
+                <h3>HTML</h3>
+                <h3>CSS</h3>
+                <h3>JavaScript</h3>
+            </div>
+        </div>
+        </section>
+        <!--project section-->
+        <section>
+            
+        </section>
+    <script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("show");
+  }
+</script>
+</body>
+</html>
