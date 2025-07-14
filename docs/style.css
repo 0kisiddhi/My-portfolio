@@ -1,0 +1,239 @@
+/*global css for whole page*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333333;   
+}
+/*Navbar style*/
+header {
+  background-color: #f8dce6;
+  padding: 20px 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);/*0 :no horizontals ,2px:slight vertical shadow 8px:blurred shadow*/
+  position: sticky;    /*navbar will fixed still after you scroll the page*/
+  top: 0;              /*stick to the */
+  z-index: 1000;       /*stays on top of the sections when overlap*/
+
+}
+nav{
+    display: flex;     /* by default arrange it in horixontal manner*/
+    justify-content:space-between ;
+    align-items: center;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+.nav-links a:hover {
+  background-color: #f0cdd7; /* light hover pink */
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #0077cc;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+}
+/* css for hambutger menu clicakble hide and shows using toggle*/
+.hamburger{
+    display: none;/*this will hide hamburger on big screen*/
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+}
+/* media query for mobile*/
+@media (max-width:768px){
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        right: 60px;
+        padding:20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        
+    }
+.nav-links.show {
+    display: flex;
+  }
+   .hamburger {
+    display: block;
+  }
+nav {
+    position: relative;
+  }
+}
+/*hero section */
+.hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  background-color: #fff0f6;
+  flex-wrap: nowrap;
+}
+.hero-text{
+  flex: 1;
+  padding-right: 30px;
+}
+.hero-image{
+  flex: none;
+  text-align: center;
+}
+.hero-image img{
+  width: 250px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 5px 4px 15px rgba(0,0,0,0.1);
+}
+
+@media(max-width: 768px){
+  .hero{
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-text{
+    padding-right: 0;
+  }
+  .hero-image{
+    margin-top: 20px;
+  }
+}
+
+
+/* about section css */
+.about{
+    padding: 60px 20px;
+    background-color: #fef5fb;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+   
+}
+.about p{
+    font-size: 18px;
+    color: #555;
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* skills section*/
+.skills-heading{
+    text-align: center;
+    color: rgb(66, 14, 14);
+}
+.skills-container{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: rgb(248, 233, 236);
+    border-radius: 30px;
+    padding: 10px 20px;
+    
+}
+/* projects section*/
+.projects{
+  background-color: #fef5fb;
+  font-weight: bold;
+  text-align: center;
+}
+.projects h2{
+  margin-bottom: 10px;
+  color: rgb(28, 26, 26);
+}
+.project-list h3{
+  font-size: 24px;
+  color: #333;
+}
+.project-card p {
+  font-size: 16px;
+  color: #555;
+  margin: 15px 0;
+}
+.project-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.project-card{
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin-bottom: 30px;
+  transition: transform 0.3s;
+  transition: background-color 0.3s;
+}
+.project-card:hover{
+  transform: translateY(-5px);
+  background-color: rgb(248, 233, 236);
+}
+/* contact section css */
+.contact{
+  background-color: #fff0f6;
+  padding: 60px 20px;
+  text-align: center;
+  margin-top: 100px;
+}
+.contact h2{
+  color: #8bbbd9;
+  margin-bottom: 30px;
+}
+.contact-form{
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 15px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  resize: none;
+}
+.contact-form button{
+  padding: 10px ;
+  font-size: 15px;
+  background-color: #8bbbd9;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.contact-form button:hover{
+  background-color: #6aa3c1;
+}
+/* footer section */
+.footer {
+  text-align: center;
+  background-color: #fbe3ee;
+  color: #333;
+  font-size: 15px;
+  padding: 20px 0 ;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 2px 10px 10px rgba(0,0,0,0.05);
+}
