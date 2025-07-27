@@ -26,6 +26,5 @@ Welcome to my personal portfolio website! This project showcases who I am as a F
 
 ---
 
-## 📁 Project Structure
-"C:\Users\siddhi jadhav\OneDrive\Pictures\Screenshots\Screenshot 2025-07-27 235828.png"
+
 
