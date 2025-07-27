@@ -5,9 +5,6 @@ Welcome to my personal portfolio website! This project showcases who I am as a F
 ## 🌐 Live Demo
 🔗 [Click here to view my portfolio]( https://0kisiddhi.github.io/My-portfolio/)
 
-> Replace with your actual GitHub Pages link once deployed.
-
----
 
 ## 🚀 Features
 
